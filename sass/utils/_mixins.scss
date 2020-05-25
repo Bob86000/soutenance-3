@@ -1,0 +1,20 @@
+@mixin extrarowblock ($wrap-or-not: nowrap,) {
+    display: flex;
+    width: 100%;
+    flex-wrap: $wrap-or-not;
+}
+
+@mixin extracolumnblock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+@mixin middleblock {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40%;
+    margin-top: 40%
+
+}
