@@ -1,0 +1,10 @@
+header {
+    background-color: $head-foot-bgc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & h1 {
+        text-align: center;
+        display: inline-block;
+    }
+}

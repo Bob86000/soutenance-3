@@ -1,0 +1,42 @@
+h1, h3, .section__link5 {
+    color: $fontcolour-secondary;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+section {
+    & h2{
+        font-size: 2rem;
+    }
+    & p {
+        font-size: 3rem;
+    }
+}
+
+.section__link{
+    &1 {
+        color: $menu1-color;
+        & p{
+            text-transform: uppercase;
+            font-style: italic;
+        }   
+    }
+    &2 {
+        color: $menu2-color;
+    }
+    &3  {
+        color: $menu3-color;
+    }
+    &4  {
+        color: $menu4-color;
+    }
+}
+
+
+
