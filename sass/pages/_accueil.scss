@@ -1,4 +1,7 @@
-section {
+.main-container{
+    @include extrarowblock;
+    margin-top: 0;
+    &__wrapped {
     @include  extrarowblock (wrap);
     width: 80%;
     margin: auto;
@@ -23,9 +26,32 @@ section {
     }
 
     }
+    &__other-page {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        & h2, h3 ,h4 {
+            display: inline-block;
+        }
 
+    }
+    &__detail-menu {
+        &1, &2, &3, &4 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    
+}
+.main-container__linear {
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
-.section__link {
+.main-container__link {
     &1, &2, &3, &4 {
     @include middleblock;
     box-shadow: 3px 3px 6px rgb(214, 211, 211);

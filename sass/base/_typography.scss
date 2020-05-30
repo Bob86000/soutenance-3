@@ -1,4 +1,4 @@
-h1, h3, .section__link5 {
+h1, h3, .main-container__link5 {
     color: $fontcolour-secondary;
 }
 
@@ -10,7 +10,7 @@ h3 {
     font-size: 2rem;
 }
 
-section {
+.main-container__wrapped {
     & h2{
         font-size: 2rem;
     }
@@ -19,7 +19,7 @@ section {
     }
 }
 
-.section__link{
+.main-container__link{
     &1 {
         color: $menu1-color;
         & p{

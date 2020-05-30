@@ -4,3 +4,14 @@
         text-decoration: initial;
     }
 }
+.detail-menu {
+    &__plats {
+    display: flex;
+    }
+    &__noms {
+        width: 70%;
+    } 
+    &__prix {
+        width: 30%;
+    }
+}

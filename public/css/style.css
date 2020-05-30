@@ -4,13 +4,17 @@
   box-sizing: inherit;
 }
 
-body {
+html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-h1, h3, .section__link5 {
+html {
+  font-size: 100%;
+}
+
+h1, h3, .main-container__link5 {
   color: rgba(241, 208, 100, 0.918);
 }
 
@@ -22,27 +26,27 @@ h3 {
   font-size: 2rem;
 }
 
-section h2 {
+.main-container__wrapped h2 {
   font-size: 2rem;
 }
-section p {
+.main-container__wrapped p {
   font-size: 3rem;
 }
 
-.section__link1 {
+.main-container__link1 {
   color: rgba(54, 9, 9, 0.87);
 }
-.section__link1 p {
+.main-container__link1 p {
   text-transform: uppercase;
   font-style: italic;
 }
-.section__link2 {
+.main-container__link2 {
   color: orange;
 }
-.section__link3 {
+.main-container__link3 {
   color: blue;
 }
-.section__link4 {
+.main-container__link4 {
   color: green;
 }
 
@@ -66,77 +70,23 @@ header h1 {
   text-decoration: initial;
 }
 
-section {
+.detail-menu__plats {
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: auto;
-  justify-content: space-around;
-  padding-bottom: 3%;
 }
-section a {
-  width: 40%;
-  margin-bottom: 2.5%;
-  margin-top: 6%;
-  text-decoration: initial;
+.detail-menu__noms {
+  width: 70%;
 }
-section div {
-  flex-wrap: wrap;
-  text-align: center;
-}
-section h2, section p {
-  display: inline-block;
-  width: 100%;
-}
-section h2 {
-  margin-bottom: 0;
+.detail-menu__prix {
+  width: 30%;
 }
 
-.section__link1, .section__link2, .section__link3, .section__link4 {
-  display: flex;
-  width: 100%;
-  padding-bottom: 50%;
-  padding-top: 50%;
-  box-shadow: 3px 3px 6px #d6d3d3;
-}
-.section__link1 {
-  background-color: #f7d4bc;
-}
-.section__link2 {
-  background-color: rgba(247, 240, 248, 0.815);
-}
-.section__link3 {
-  background-color: #f7f7f7;
-  font-style: italic;
-}
-.section__link4 {
-  background-color: white;
-  font-style: italic;
-}
-.section__link5 {
-  background-color: rgba(42, 134, 96, 0.836);
-  border-radius: 0.7rem;
-  padding-bottom: 2.5%;
-}
-.section__link5 h2 {
-  margin: auto;
-}
-
-footer {
+.main-container {
   display: flex;
   width: 100%;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  background-color: rgba(42, 134, 96, 0.836);
+  margin-top: 0;
 }
-footer a {
-  text-decoration: initial;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-section {
+.main-container__wrapped {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -145,51 +95,70 @@ section {
   justify-content: space-around;
   padding-bottom: 3%;
 }
-section a {
+.main-container__wrapped a {
   width: 40%;
   margin-bottom: 2.5%;
   margin-top: 6%;
   text-decoration: initial;
 }
-section div {
+.main-container__wrapped div {
   flex-wrap: wrap;
   text-align: center;
 }
-section h2, section p {
+.main-container__wrapped h2, .main-container__wrapped p {
   display: inline-block;
   width: 100%;
 }
-section h2 {
+.main-container__wrapped h2 {
   margin-bottom: 0;
 }
+.main-container__other-page {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.main-container__other-page h2, .main-container__other-page h3, .main-container__other-page h4 {
+  display: inline-block;
+}
+.main-container__detail-menu1, .main-container__detail-menu2, .main-container__detail-menu3, .main-container__detail-menu4 {
+  display: flex;
+  flex-direction: column;
+}
 
-.section__link1, .section__link2, .section__link3, .section__link4 {
+.main-container__linear {
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main-container__link1, .main-container__link2, .main-container__link3, .main-container__link4 {
   display: flex;
   width: 100%;
   padding-bottom: 50%;
   padding-top: 50%;
   box-shadow: 3px 3px 6px #d6d3d3;
 }
-.section__link1 {
+.main-container__link1 {
   background-color: #f7d4bc;
 }
-.section__link2 {
+.main-container__link2 {
   background-color: rgba(247, 240, 248, 0.815);
 }
-.section__link3 {
+.main-container__link3 {
   background-color: #f7f7f7;
   font-style: italic;
 }
-.section__link4 {
+.main-container__link4 {
   background-color: white;
   font-style: italic;
 }
-.section__link5 {
+.main-container__link5 {
   background-color: rgba(42, 134, 96, 0.836);
   border-radius: 0.7rem;
   padding-bottom: 2.5%;
 }
-.section__link5 h2 {
+.main-container__link5 h2 {
   margin: auto;
 }
 
