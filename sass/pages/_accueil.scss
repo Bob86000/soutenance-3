@@ -27,20 +27,49 @@
 
     }
     &__other-page {
+        &1, &2, &3, &4{
         width: 60%;
         margin-left: 20%;
         margin-right: 20%;
         & h2, h3 ,h4 {
             display: inline-block;
         }
+    }
+        &1 {
+            background-color: $menu1-bcg;
+        }
+        &2 {
+            background-color: $menu2-bcg;
+        }
+        &3 {
+            background-color: $menu3-bcg;
+        }
+        &4 {
+            background-color: $menu4-bcg;
+        }
+    
 
     }
     &__detail-menu {
         &1, &2, &3, &4 {
             display: flex;
             flex-direction: column;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 10%;
+            margin-bottom: 10%;
         }
     }
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    &__footer {
+        display: flex;
+        justify-content: center;
+    } 
     &__linear {
         background: linear-gradient(to right, #30CFD0 0%, #330867 100%);;
         background-clip: text;
