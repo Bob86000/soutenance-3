@@ -41,15 +41,40 @@
             flex-direction: column;
         }
     }
+    &__linear {
+        background: linear-gradient(to right, #30CFD0 0%, #330867 100%);;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        display: flex;
+        align-items: center;
+        & h3 {
+        margin-right: 5%;
+        text-align: center;
+        width: 20%;
+        
+        margin-left: 5%;
+        }
+
+    }
+    &__linear::before {
+        display: flex;
+        background: red;
+        content: "";
+        width: 35%;
+        height: 3px;
+    }
+    &__linear::after {
+        display: flex;
+        background: red;
+        content: "";
+        width: 35%;
+        height: 3px;
+    }
     
     
 }
-.main-container__linear {
-    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
+
 
 .main-container__link {
     &1, &2, &3, &4 {
