@@ -13,16 +13,12 @@
         margin-top: 6%;
         text-decoration: initial;
         }
-    & div {
-        flex-wrap: wrap;
-        text-align: center;
-    } 
     & h2, p {
         display: inline-block;
         width: 100%;
     }
-    & h2 {
-        margin-bottom: 0;
+    & p {
+        margin-top: 0;
     }
 
     }
@@ -54,51 +50,63 @@
         &1, &2, &3, &4 {
             display: flex;
             flex-direction: column;
-            width: 80%;
-            margin-left: 10%;
-            margin-right: 10%;
+        }
+        &2, &3 ,&4 {
+            margin-left: 5%;
+            margin-right: 5%;
             margin-top: 10%;
             margin-bottom: 10%;
+            width: 90%;
+        }
+        &1 {
+            margin-left: 12%;
+            margin-right: 12%;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            width: 76%;
         }
     }
     &__header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        & img {
+            width: 13%;
+        }
+        
     }   
     &__footer {
         display: flex;
         justify-content: center;
+        align-items: center;
+        & img {
+            width: 8%;
+            margin-right: 1rem;
+        }
     } 
     &__linear {
-        background: linear-gradient(to right, #30CFD0 0%, #330867 100%);;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         & h3 {
-        margin-right: 5%;
         text-align: center;
-        width: 20%;
-        
-        margin-left: 5%;
+        width: 30%; 
         }
 
     }
     &__linear::before {
         display: flex;
-        background: red;
+        background: $menu1-color;
         content: "";
-        width: 35%;
-        height: 3px;
+        width: 30%;
+        height: 5px;
     }
     &__linear::after {
         display: flex;
-        background: red;
+        background: $menu1-color;
         content: "";
-        width: 35%;
-        height: 3px;
+        width: 30%;
+        height: 5px;
     }
     
     
@@ -109,6 +117,8 @@
     &1, &2, &3, &4 {
     @include middleblock;
     box-shadow: 3px 3px 6px rgb(214, 211, 211);
+    flex-direction: column;
+    text-align: center;
     }
     &1 {
         background-color: $menu1-bcg;
@@ -131,9 +141,10 @@
     &5 {
         background-color: $head-foot-bgc;
         border-radius: 0.7rem;
-        padding-bottom: 2.5%;
+        display: flex;
+        align-items: center;
         & h2 {
-            margin: auto;
+            text-align: center;
         }
         
     }

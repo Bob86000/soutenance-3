@@ -7,11 +7,9 @@
 .detail-menu {
     &__plats {
     display: flex;
+    justify-content: space-between;
     }
-    &__noms {
-        width: 70%;
-    } 
     &__prix {
-        width: 30%;
+        text-align: end;
     }
 }

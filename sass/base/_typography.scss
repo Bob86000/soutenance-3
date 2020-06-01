@@ -1,13 +1,33 @@
-h1, h3, .main-container__link5 {
+
+header h1, footer h3, .main-container__link5 {
     color: $fontcolour-secondary;
 }
 
 h1 {
     font-size: 4rem;
 }
-
+h2 {
+    font-size: 2rem;
+}
 h3 {
     font-size: 2rem;
+}
+h4 {
+    font-size: 2rem;
+}
+.other-font {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.7rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
 }
 
 .main-container__wrapped {
@@ -37,6 +57,45 @@ h3 {
         color: $menu4-color;
     }
 }
+    .detail-menu {
+        &__noms {
+            font-size: 1.5rem;
+        } 
+        &__prix {
+            font-size: 1.5rem;
+        }
+    }
+
+
+.main-container {
+    &__other-page {
+        &1 {
+            & .main-container {
+                &__header {
+                    color: $menu1-color;
+                }
+                &__linear {
+                    color: $menu1-color;
+                }
+                &__footer {
+                    color : $menu1-color;
+                }
+            }
+                & .detail-menu {
+                    &__noms {
+                        color: $menu1-color;
+                    }
+                    &__prix {
+                        color: $menu1-color;
+
+                    } 
+
+                }
+                
+            }
+        }
+    }
+    
 
 
 
