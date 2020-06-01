@@ -19,7 +19,7 @@ header h1, footer h3, .main-container__link5 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -38,7 +38,7 @@ h4 {
   font-size: 1.5rem;
 }
 .other-font h2 {
-  font-size: 2rem;
+  font-size: 5rem;
 }
 .other-font h3 {
   font-size: 1.7rem;
@@ -176,6 +176,10 @@ h4 {
 }
 .main-container__other-page4 .addscolors6 {
   color: black;
+}
+
+.main-container__header h2 {
+  font-size: 4rem;
 }
 
 header {
