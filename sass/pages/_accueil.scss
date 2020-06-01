@@ -24,9 +24,9 @@
     }
     &__other-page {
         &1, &2, &3, &4{
-        width: 60%;
-        margin-left: 20%;
-        margin-right: 20%;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
         & h2, h3 ,h4 {
             display: inline-block;
         }
@@ -34,11 +34,15 @@
         &1 {
             background-color: $menu1-bcg;
             & .liner {
-                background-color: black;
+                background-color: $menu1-color;
             }
             
         }
         &2 {
+            .detail-menu__plats{
+                margin-left: 15%;
+                margin-right: 15%;
+            }
             background-color: $menu2-bcg;
             .addscolors {
                 &1 .liner {
@@ -63,6 +67,10 @@
     }
         &3 {
             background-color: $menu3-bcg;
+            .detail-menu__plats{
+                margin-left: 15%;
+                margin-right: 15%;
+            }
             .addscolors {
                 &1 .liner {
                     background-color: $menu3-color;
@@ -86,22 +94,28 @@
     }
         &4 {
             background-color: $menu4-bcg;
+            .detail-menu__plats{
+                margin-left: 15%;
+                margin-right: 15%;
+            }
             .addscolors {
                 
                 &1 .liner {
-                    background-color: $menu4-color;
-                }
+                    
+            background: linear-gradient(260deg, $menu4-color 10%,  $menu4-specialcolor2 70%);
+           
+            }
                 &2 .liner {
                     background-color: $menu4-color;
                 }
                 &3 .liner {
-                    background-color: $menu4-specialcolor1;
+                    background: linear-gradient(260deg, $menu4-color 10%,  $menu4-specialcolor2 70%);
                 }
                 &4 .liner {
                     background-color: $menu4-specialcolor1;
                 }
                 &5 .liner {
-                    background-color: $menu4-specialcolor2;
+                    background: linear-gradient(260deg, $menu4-color 10%,  $menu4-specialcolor2 70%);
                 }
                 &6 .liner {
                     background-color: $menu4-specialcolor2;
@@ -228,4 +242,8 @@ footer {
         padding-right: 2rem;
     }    
 }
-
+.main_wrapper .other-font {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}

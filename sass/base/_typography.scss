@@ -127,7 +127,7 @@ h4 {
             
             & .main-container {
                 &__header {
-                background: linear-gradient(165deg, $menu2-color 25%, $menu2-specialcolor1 59%,  $menu2-specialcolor2 70%);
+                background: linear-gradient(165deg, $menu3-color 25%, $menu3-specialcolor1 65%,  $menu3-specialcolor2 70%);
                 
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -135,24 +135,56 @@ h4 {
 
         }
         & .addscolors1 {
-            color: $menu2-color;
+            color: $nocolor;
             
         }
         & .addscolors2 {
-            color:$menu2-color;
+            color:$nocolor;
         }
         & .addscolors3 {
-            color:$menu2-specialcolor1;
+            color:$nocolor;
         }
         & .addscolors4 {
-            color:$menu2-specialcolor1;
+            color:$nocolor;
         }
         & .addscolors5 {
-            color: $menu2-specialcolor2 ;
+            color: $nocolor ;
         }
         & .addscolors6 {
-            color:$menu2-specialcolor2 ;
+            color:$nocolor;
         }
+    }
+    &4 {
+        
+            
+        & .main-container {
+            &__header {
+            background: linear-gradient(165deg, $menu4-color 45%, $menu4-specialcolor1 50%,  $menu4-specialcolor2 60%);
+            
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            }
+
+    }
+    & .addscolors1 {
+        color: $nocolor;
+        
+    }
+    & .addscolors2 {
+        color:$nocolor;
+    }
+    & .addscolors3 {
+        color:$nocolor;
+    }
+    & .addscolors4 {
+        color:$nocolor;
+    }
+    & .addscolors5 {
+        color: $nocolor ;
+    }
+    & .addscolors6 {
+        color:$nocolor;
+    }
     }
     }
 }
