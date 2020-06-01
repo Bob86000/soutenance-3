@@ -49,20 +49,41 @@ h4 {
     }
     &2 {
         color: $menu2-color;
+        & h2 {
+            background: linear-gradient(165deg, $menu2-color 25%, $menu2-specialcolor1 59%,  $menu2-specialcolor2 70%);
+                    
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+        }
     }
     &3  {
         color: $menu3-color;
-    }
+        & h2 {
+            background: linear-gradient(165deg, $menu3-color 25%, $menu3-specialcolor1 65%,  $menu3-specialcolor2 70%);
+                
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            }
+
+        }
+    
     &4  {
         color: $menu4-color;
-    }
+        & h2 {
+            background: linear-gradient(165deg, $menu4-color 45%, $menu4-specialcolor1 50%,  $menu4-specialcolor2 60%);
+            
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            }
+        }
+    
 }
     .detail-menu {
         &__noms {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         } 
         &__prix {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
     }
 

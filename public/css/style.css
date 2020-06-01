@@ -64,18 +64,33 @@ h4 {
 .main-container__link2 {
   color: orange;
 }
+.main-container__link2 h2 {
+  background: linear-gradient(165deg, orange 25%, #b771cc 59%, #631ab6 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .main-container__link3 {
   color: #0101be;
+}
+.main-container__link3 h2 {
+  background: linear-gradient(165deg, #0101be 25%, #378dff 65%, #36b7f3 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .main-container__link4 {
   color: #0d741a;
 }
+.main-container__link4 h2 {
+  background: linear-gradient(165deg, #0d741a 45%, #3dcc20 50%, #9ad34f 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .detail-menu__noms {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .detail-menu__prix {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .main-container__other-page1 .main-container__header {
@@ -220,9 +235,10 @@ header h1 {
   margin-top: 0;
 }
 .main-container__other-page1, .main-container__other-page2, .main-container__other-page3, .main-container__other-page4 {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 76%;
+  margin-top: 1%;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 .main-container__other-page1 h2, .main-container__other-page1 h3, .main-container__other-page1 h4, .main-container__other-page2 h2, .main-container__other-page2 h3, .main-container__other-page2 h4, .main-container__other-page3 h2, .main-container__other-page3 h3, .main-container__other-page3 h4, .main-container__other-page4 h2, .main-container__other-page4 h3, .main-container__other-page4 h4 {
   display: inline-block;
@@ -367,9 +383,16 @@ header h1 {
   box-shadow: 3px 3px 6px #d6d3d3;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 .main-container__link1 {
   background-color: #f7d4bc;
+  padding-top: 44%;
+  padding-bottom: 44%;
+}
+.main-container__link1 img {
+  width: 12%;
+  margin: auto;
 }
 .main-container__link2 {
   background-color: rgba(247, 240, 248, 0.815);
@@ -406,9 +429,13 @@ footer a {
 }
 
 .main_wrapper .other-font {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+  padding-bottom: 7%;
+}
+.main_wrapper .other-font h2 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
