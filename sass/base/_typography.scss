@@ -93,9 +93,68 @@ h4 {
                 }
                 
             }
+            &2 {
+                & .main-container {
+                    &__header {
+                    background: linear-gradient(165deg, $menu2-color 25%, $menu2-specialcolor1 59%,  $menu2-specialcolor2 70%);
+                    
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    }
+
+            }
+            & .addscolors1 {
+                color: $menu2-color;
+                
+            }
+            & .addscolors2 {
+                color:$menu2-color;
+            }
+            & .addscolors3 {
+                color:$menu2-specialcolor1;
+            }
+            & .addscolors4 {
+                color:$menu2-specialcolor1;
+            }
+            & .addscolors5 {
+                color: $menu2-specialcolor2 ;
+            }
+            & .addscolors6 {
+                color:$menu2-specialcolor2 ;
+            }
+        }
+        &3 {
+            
+            & .main-container {
+                &__header {
+                background: linear-gradient(165deg, $menu2-color 25%, $menu2-specialcolor1 59%,  $menu2-specialcolor2 70%);
+                
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                }
+
+        }
+        & .addscolors1 {
+            color: $menu2-color;
+            
+        }
+        & .addscolors2 {
+            color:$menu2-color;
+        }
+        & .addscolors3 {
+            color:$menu2-specialcolor1;
+        }
+        & .addscolors4 {
+            color:$menu2-specialcolor1;
+        }
+        & .addscolors5 {
+            color: $menu2-specialcolor2 ;
+        }
+        & .addscolors6 {
+            color:$menu2-specialcolor2 ;
         }
     }
-    
-
+    }
+}
 
 

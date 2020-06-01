@@ -6,6 +6,13 @@ $menu3-bcg: rgb(247, 247, 247);
 $menu4-bcg: white;
 $menu1-color: rgba(54, 9, 9, 0.87);
 $menu2-color: orange;
+$menu2-specialcolor1:  rgb(183, 113, 204);
+$menu2-specialcolor2:  rgb(99, 26, 182);
 $menu3-color: blue;
+$menu3-specialcolor1: lighten($menu3-color, 20%);
+$menu3-specialcolor2: lighten($menu3-color, 40%);
 $menu4-color: green;
+$menu4-specialcolor1:  rgb(183, 113, 204);
+$menu4-specialcolor2:  rgb(183, 113, 204);
+
 

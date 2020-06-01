@@ -33,19 +33,85 @@
     }
         &1 {
             background-color: $menu1-bcg;
+            & .liner {
+                background-color: black;
+            }
+            
         }
         &2 {
             background-color: $menu2-bcg;
+            .addscolors {
+                &1 .liner {
+                    background-color: $menu2-color;
+                }
+                &2 .liner {
+                    background-color: $menu2-color;
+                }
+                &3 .liner {
+                    background-color: $menu2-specialcolor1;
+                }
+                &4 .liner {
+                    background-color: $menu2-specialcolor1;
+                }
+                &5 .liner {
+                    background-color: $menu2-specialcolor2;
+                }
+                &6 .liner {
+                    background-color: $menu2-specialcolor2;
+                }
         }
+    }
         &3 {
             background-color: $menu3-bcg;
+            .addscolors {
+                &1 .liner {
+                    background-color: $menu3-color;
+                }
+                &2 .liner {
+                    background-color: $menu3-color;
+                }
+                &3 .liner {
+                    background-color: $menu3-specialcolor1;
+                }
+                &4 .liner {
+                    background-color: $menu3-specialcolor1;
+                }
+                &5 .liner {
+                    background-color: $menu3-specialcolor2;
+                }
+                &6 .liner {
+                    background-color: $menu3-specialcolor2;
+                }
         }
+    }
         &4 {
             background-color: $menu4-bcg;
+            .addscolors {
+                
+                &1 .liner {
+                    background-color: $menu4-color;
+                }
+                &2 .liner {
+                    background-color: $menu4-color;
+                }
+                &3 .liner {
+                    background-color: $menu4-specialcolor1;
+                }
+                &4 .liner {
+                    background-color: $menu4-specialcolor1;
+                }
+                &5 .liner {
+                    background-color: $menu4-specialcolor2;
+                }
+                &6 .liner {
+                    background-color: $menu4-specialcolor2;
+                }
         }
+    }
+}
+        
     
 
-    }
     &__detail-menu {
         &1, &2, &3, &4 {
             display: flex;
@@ -94,23 +160,21 @@
         }
 
     }
-    &__linear::before {
+    &__linear {
+        & .liner {
         display: flex;
-        background: $menu1-color;
         content: "";
         width: 30%;
         height: 5px;
     }
-    &__linear::after {
-        display: flex;
-        background: $menu1-color;
-        content: "";
-        width: 30%;
-        height: 5px;
+        
     }
     
     
 }
+
+
+
 
 
 .main-container__link {
