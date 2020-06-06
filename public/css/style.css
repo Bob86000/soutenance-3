@@ -14,6 +14,12 @@ html {
   font-size: 100%;
 }
 
+@font-face {
+  font-family: "devonshire";
+  src: url("../../image/fonts/devonshire-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 header h1, footer h3, .main-container__link5 {
   color: rgba(241, 208, 100, 0.918);
 }
@@ -34,6 +40,14 @@ h4 {
   font-size: 2rem;
 }
 
+p {
+  font-size: 1.3rem;
+}
+
+input {
+  font-size: 1.5rem;
+}
+
 .other-font h1 {
   font-size: 1.5rem;
 }
@@ -44,7 +58,13 @@ h4 {
   font-size: 1.7rem;
 }
 .other-font h4 {
-  font-size: 2rem;
+  font-size: 3.5rem;
+}
+
+.fa-music {
+  background: linear-gradient(120deg, #f83e4e 45%, rgba(255, 144, 80, 0.993) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .main-container__wrapped h2 {
@@ -60,6 +80,9 @@ h4 {
 .main-container__link1 p {
   text-transform: uppercase;
   font-style: italic;
+}
+.main-container__link1 h2 {
+  font-family: "devonshire", cursive;
 }
 .main-container__link2 {
   color: orange;
@@ -93,14 +116,22 @@ h4 {
   font-size: 1.3rem;
 }
 
+.main-container__ctn-legal address {
+  font-size: 1.3rem;
+}
+.main-container__other-page1 {
+  font-family: "Satisfy", cursive;
+}
 .main-container__other-page1 .main-container__header {
   color: rgba(54, 9, 9, 0.87);
+  font-family: "devonshire", cursive;
 }
 .main-container__other-page1 .main-container__linear {
   color: rgba(54, 9, 9, 0.87);
 }
 .main-container__other-page1 .main-container__footer {
   color: rgba(54, 9, 9, 0.87);
+  font-family: "devonshire", cursive;
 }
 .main-container__other-page1 .detail-menu__noms {
   color: rgba(54, 9, 9, 0.87);
@@ -131,6 +162,9 @@ h4 {
 .main-container__other-page2 .addscolors6 {
   color: #631ab6;
 }
+.main-container__other-page3 {
+  font-family: "Satisfy", cursive;
+}
 .main-container__other-page3 .main-container__header {
   background: linear-gradient(165deg, #0101be 25%, #378dff 65%, #36b7f3 70%);
   -webkit-background-clip: text;
@@ -153,6 +187,9 @@ h4 {
 }
 .main-container__other-page3 .addscolors6 {
   color: black;
+}
+.main-container__other-page4 {
+  font-family: "Satisfy", cursive;
 }
 .main-container__other-page4 .main-container__header {
   background: linear-gradient(165deg, #0d741a 45%, #3dcc20 50%, #9ad34f 60%);
@@ -237,6 +274,17 @@ header h1 {
 }
 .main-container__wrapped p {
   margin-top: 0;
+}
+.main-container__legal-page {
+  text-align: center;
+}
+.main-container__legal-page p {
+  width: 30%;
+  text-align: justify;
+  margin: auto;
+}
+.main-container__contact-page {
+  text-align: center;
 }
 .main-container__other-page1, .main-container__other-page2, .main-container__other-page3, .main-container__other-page4 {
   width: 76%;
@@ -379,24 +427,34 @@ header h1 {
   height: 5px;
 }
 
+h2 {
+  margin-top: 0;
+}
+
+.fa-music {
+  font-size: 5.5rem;
+}
+
 .main-container__link1, .main-container__link2, .main-container__link3, .main-container__link4 {
   display: flex;
   width: 100%;
-  padding-bottom: 50%;
-  padding-top: 50%;
   box-shadow: 3px 3px 6px #d6d3d3;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  height: 50rem;
+  padding-top: 20rem;
+  padding-bottom: 15rem;
+}
+.main-container__link1 p, .main-container__link2 p, .main-container__link3 p, .main-container__link4 p {
+  margin-bottom: 0;
 }
 .main-container__link1 {
   background-color: #f7d4bc;
-  padding-top: 38%;
-  padding-bottom: 50%;
+  padding-top: 14.5rem;
 }
-.main-container__link1 img {
-  width: 12%;
-  margin: auto;
+.main-container__link1 .fa-music {
+  font-size: 5.5rem;
 }
 .main-container__link2 {
   background-color: rgba(247, 240, 248, 0.815);
@@ -440,6 +498,14 @@ footer a {
 }
 .main_wrapper .other-font h2 {
   text-align: center;
+}
+
+.main-container__header .fa-music {
+  font-size: 6rem;
+}
+.main-container__footer .fa-music {
+  margin-right: 2rem;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

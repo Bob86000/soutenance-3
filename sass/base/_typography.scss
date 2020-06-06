@@ -1,3 +1,10 @@
+@font-face
+{
+    font-family: 'devonshire';
+    src: url('../../image/fonts/devonshire-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 header h1, footer h3, .main-container__link5 {
     color: $fontcolour-secondary;
@@ -15,6 +22,12 @@ h3 {
 h4 {
     font-size: 2rem;
 }
+p {
+    font-size: 1.3rem;
+}
+input {
+    font-size: 1.5rem;
+}
 .other-font {
     h1 {
         font-size: 1.5rem;
@@ -26,10 +39,16 @@ h4 {
         font-size: 1.7rem;
     }
     h4 {
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
 }
-
+.fa-music {
+    background: linear-gradient(120deg, $menu2-color1 45%, $menu2-color2 70%);
+                    
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+                
+}
 .main-container__wrapped {
     & h2{
         font-size: 3rem;
@@ -45,7 +64,11 @@ h4 {
         & p{
             text-transform: uppercase;
             font-style: italic;
-        }   
+            
+        } 
+        & h2{
+            font-family: 'devonshire', cursive;
+        }  
     }
     &2 {
         color: $menu2-color;
@@ -89,17 +112,24 @@ h4 {
 
 
 .main-container {
+    &__ctn-legal address {
+        font-size:1.3rem;
+    }
     &__other-page {
         &1 {
+            
+            font-family: 'Satisfy', cursive;
             & .main-container {
                 &__header {
                     color: $menu1-color;
+                    font-family: 'devonshire', cursive;
                 }
                 &__linear {
                     color: $menu1-color;
                 }
                 &__footer {
                     color : $menu1-color;
+                    font-family: 'devonshire', cursive;
                 }
             }
                 & .detail-menu {
@@ -145,6 +175,7 @@ h4 {
             }
         }
         &3 {
+            font-family: 'Satisfy', cursive;
             
             & .main-container {
                 &__header {
@@ -176,7 +207,7 @@ h4 {
         }
     }
     &4 {
-        
+        font-family: 'Satisfy', cursive;
             
         & .main-container {
             &__header {

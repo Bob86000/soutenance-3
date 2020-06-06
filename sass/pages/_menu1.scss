@@ -1,0 +1,15 @@
+.main-container {
+    &__header {
+        & .fa-music {
+            font-size: 6rem;
+        }
+    }
+
+    &__footer {
+        & .fa-music {
+            margin-right: 2rem;
+            font-size: 3rem;
+        }
+    }
+}
+    
