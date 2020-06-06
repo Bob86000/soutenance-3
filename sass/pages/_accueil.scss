@@ -53,7 +53,7 @@
             
         }
         &2 {
-            .detail-menu__plats{
+            .article__plats{
                 margin-left: 15%;
                 margin-right: 15%;
             }
@@ -81,7 +81,7 @@
     }
         &3 {
             background-color: $menu3-bcg;
-            .detail-menu__plats{
+            .article__plats{
                 margin-left: 15%;
                 margin-right: 15%;
             }
@@ -108,7 +108,7 @@
     }
         &4 {
             background-color: $menu4-bcg;
-            .detail-menu__plats{
+            .article__plats{
                 margin-left: 15%;
                 margin-right: 15%;
             }
@@ -140,6 +140,81 @@
         
     
 
+    
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.fa-music {
+    font-size: 5.5rem;
+}
+
+
+.main-container__link {
+    &1, &2, &3, &4 {
+    @include middleblock;
+    box-shadow: 3px 3px 6px rgb(214, 211, 211);
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 50rem;
+    padding-top: 20rem;
+    padding-bottom: 15rem;
+    & p {
+        margin-bottom: 0;
+    }
+    }
+    &1 {
+        background-color: $menu1-bcg;
+        padding-top: 14.5rem;
+        & .fa-music {
+            font-size: 5.5rem;
+        } 
+    }
+    &2 {
+        background-color: $menu2-bcg;
+    }   
+    &3 {
+        background-color: $menu3-bcg;
+        font-style: italic;
+        
+
+    }
+    &4 {
+        background-color: $menu4-bcg;
+        font-style: italic;
+        font-family: 'Satisfy', cursive;
+        
+    }
+    
+    &5 {
+        background-color: $head-foot-bgc;
+        border-radius: 0.7rem;
+        display: flex;
+        align-items: center;
+        
+        & h2 {
+            text-align: center;
+            margin: 1.5rem auto;
+        }
+        
+    }
+
+}
+
+.article {
+    &__plats {
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__noms {
+        display: flex;
+        justify-content: space-between;
+    }
+    
     &__detail-menu {
         &1, &2, &3, &4 {
             display: flex;
@@ -199,67 +274,6 @@
         
     }
     
-    
-}
-
-h2 {
-    margin-top: 0;
-}
-
-.fa-music {
-    font-size: 5.5rem;
-}
-
-
-.main-container__link {
-    &1, &2, &3, &4 {
-    @include middleblock;
-    box-shadow: 3px 3px 6px rgb(214, 211, 211);
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    height: 50rem;
-    padding-top: 20rem;
-    padding-bottom: 15rem;
-    & p {
-        margin-bottom: 0;
-    }
-    }
-    &1 {
-        background-color: $menu1-bcg;
-        padding-top: 14.5rem;
-        & .fa-music {
-            font-size: 5.5rem;
-        } 
-    }
-    &2 {
-        background-color: $menu2-bcg;
-    }   
-    &3 {
-        background-color: $menu3-bcg;
-        font-style: italic;
-        
-
-    }
-    &4 {
-        background-color: $menu4-bcg;
-        font-style: italic;
-        
-    }
-    
-    &5 {
-        background-color: $head-foot-bgc;
-        border-radius: 0.7rem;
-        display: flex;
-        align-items: center;
-        
-        & h2 {
-            text-align: center;
-            margin: 1.5rem auto;
-        }
-        
-    }
-
 }
 
 

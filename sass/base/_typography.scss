@@ -66,6 +66,7 @@ input {
         & p{
             text-transform: uppercase;
             font-style: italic;
+            font-family: 'satisfy', cursive;
             
         } 
         & h2{
@@ -103,13 +104,10 @@ input {
         }
     
 }
-    .detail-menu {
+.article {
         &__noms {
             font-size: 1.3rem;
         } 
-        &__prix {
-            font-size: 1.3rem;
-        }
     }
 
 
@@ -124,7 +122,7 @@ input {
                 font-style: oblique;
             }
 
-            & .main-container {
+            & .article {
                 &__header {
                     color: $menu1-color;
                     font-family: 'devonshire', cursive;
@@ -137,20 +135,17 @@ input {
                     font-family: 'devonshire', cursive;
                 }
             }
-                & .detail-menu {
+                & .article {
                     &__noms {
                         color: $menu1-color;
                     }
-                    &__prix {
-                        color: $menu1-color;
-
-                    } 
+                    
 
                 }
                 
             }
             &2 {
-                & .main-container {
+                & .article {
                     &__header {
                     background: linear-gradient(165deg, $menu2-color 25%, $menu2-specialcolor1 59%,  $menu2-specialcolor2 70%);
                     
@@ -186,7 +181,7 @@ input {
             }
         
             
-            & .main-container {
+            & .article {
                 &__header {
                 background: linear-gradient(165deg, $menu3-color 25%, $menu3-specialcolor1 65%,  $menu3-specialcolor2 70%);
                 
@@ -221,7 +216,7 @@ input {
         font-style: oblique;
     }
             
-        & .main-container {
+        & .article {
             &__header {
             background: linear-gradient(165deg, $menu4-color 45%, $menu4-specialcolor1 50%,  $menu4-specialcolor2 60%);
             
@@ -252,7 +247,7 @@ input {
     }
     }
 }
-.main-container__header {
+.article__header {
     & h2 {
     font-size: 4rem;
     }
