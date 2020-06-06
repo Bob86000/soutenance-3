@@ -1,17 +1,24 @@
 .main-container{
     @include extrarowblock;
-    margin-top: 0;
+    justify-content: center;
     &__wrapped {
     @include  extrarowblock (wrap);
-    width: 80%;
+    width: 100%;
     margin: auto;
-    justify-content: space-around;
-    padding-bottom: 3%;
+    justify-content: center;
     & a {
         width: 40%;
         margin-bottom: 2.5%;
         margin-top: 6%;
+        margin-left: 3%;
+        margin-right: 3%;
         text-decoration: initial;
+        @media all and (max-width: 768px){
+            width: 80%
+        
+        }
+        
+       
         }
     & h2, p {
         display: inline-block;
@@ -162,6 +169,25 @@ h2 {
     height: 50rem;
     padding-top: 20rem;
     padding-bottom: 15rem;
+    @media all and (min-width: 992px) and (max-width: 1199px)
+    {
+        height: 40rem;
+        padding-top: 15rem;
+        padding-bottom: 10rem;
+    }
+    @media all and (min-width: 769px) and (max-width: 991px){
+        height: 30rem;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+    @media all and (max-width: 768px){
+        
+        height: 15rem;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
+    
+
     & p {
         margin-bottom: 0;
     }
@@ -194,6 +220,7 @@ h2 {
         border-radius: 0.7rem;
         display: flex;
         align-items: center;
+        margin-bottom: 6rem;
         
         & h2 {
             text-align: center;
@@ -283,6 +310,8 @@ footer {
     @include  extrarowblock;
     justify-content: space-between;
     background-color: $head-foot-bgc; 
+    position: fixed;
+    bottom: 0;
     & a {
         text-decoration: initial;
         padding-left: 2rem;
@@ -296,5 +325,5 @@ footer {
     text-align: center;
     }
     padding-top: 3%;
-    padding-bottom: 7%;
+    padding-bottom: 8%;
 }

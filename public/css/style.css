@@ -17,15 +17,13 @@ html {
 @font-face {
   font-family: "devonshire";
   src: url("../../image/fonts/devonshire-regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 header h1, footer h3, .main-container__link5 {
   color: rgba(241, 208, 100, 0.918);
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -52,7 +50,7 @@ input {
   font-size: 1.5rem;
 }
 .other-font h2 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .other-font h3 {
   font-size: 2.1rem;
@@ -135,6 +133,10 @@ input {
 }
 .main-container__other-page1 .article__noms {
   color: rgba(54, 9, 9, 0.87);
+}
+.main-container__other-page2 .article__detail-menu2 h3 {
+  font-size: 1.6rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .main-container__other-page2 .article__header {
   background: linear-gradient(165deg, orange 25%, #b771cc 59%, #631ab6 70%);
@@ -219,7 +221,7 @@ input {
 }
 
 header {
-  background-color: rgba(42, 134, 96, 0.836);
+  background-color: #2a8660;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,22 +253,28 @@ header h1 {
   display: flex;
   width: 100%;
   flex-wrap: nowrap;
-  margin-top: 0;
+  justify-content: center;
 }
 .main-container__wrapped {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   margin: auto;
-  justify-content: space-around;
-  padding-bottom: 3%;
+  justify-content: center;
 }
 .main-container__wrapped a {
   width: 40%;
   margin-bottom: 2.5%;
   margin-top: 6%;
+  margin-left: 3%;
+  margin-right: 3%;
   text-decoration: initial;
+}
+@media all and (max-width: 768px) {
+  .main-container__wrapped a {
+    width: 80%;
+  }
 }
 .main-container__wrapped h2, .main-container__wrapped p {
   display: inline-block;
@@ -396,6 +404,27 @@ h2 {
   padding-top: 20rem;
   padding-bottom: 15rem;
 }
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .main-container__link1, .main-container__link2, .main-container__link3, .main-container__link4 {
+    height: 40rem;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 991px) {
+  .main-container__link1, .main-container__link2, .main-container__link3, .main-container__link4 {
+    height: 30rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .main-container__link1, .main-container__link2, .main-container__link3, .main-container__link4 {
+    height: 15rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
+}
 .main-container__link1 p, .main-container__link2 p, .main-container__link3 p, .main-container__link4 p {
   margin-bottom: 0;
 }
@@ -419,10 +448,11 @@ h2 {
   font-family: "Satisfy", cursive;
 }
 .main-container__link5 {
-  background-color: rgba(42, 134, 96, 0.836);
+  background-color: #2a8660;
   border-radius: 0.7rem;
   display: flex;
   align-items: center;
+  margin-bottom: 6rem;
 }
 .main-container__link5 h2 {
   text-align: center;
@@ -493,7 +523,9 @@ footer {
   width: 100%;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background-color: rgba(42, 134, 96, 0.836);
+  background-color: #2a8660;
+  position: fixed;
+  bottom: 0;
 }
 footer a {
   text-decoration: initial;
@@ -505,7 +537,7 @@ footer a {
   display: flex;
   flex-direction: column;
   padding-top: 3%;
-  padding-bottom: 7%;
+  padding-bottom: 8%;
 }
 .main_wrapper .other-font h2 {
   text-align: center;
