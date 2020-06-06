@@ -11,7 +11,7 @@ header h1, footer h3, .main-container__link5 {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 6rem;
 }
 h2 {
     font-size: 2rem;
@@ -23,7 +23,7 @@ h4 {
     font-size: 2rem;
 }
 p {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 input {
     font-size: 1.5rem;
@@ -36,8 +36,10 @@ input {
         font-size: 5rem;
     }
     h3 {
-        font-size: 1.7rem;
-    }
+        font-size: 2.1rem;
+        font-family: 'Satisfy', cursive;
+}
+    
     h4 {
         font-size: 3.5rem;
     }
@@ -117,8 +119,11 @@ input {
     }
     &__other-page {
         &1 {
-            
-            font-family: 'Satisfy', cursive;
+            & p {
+                font-family: 'Times New Roman', serif;
+                font-style: oblique;
+            }
+
             & .main-container {
                 &__header {
                     color: $menu1-color;
@@ -175,7 +180,11 @@ input {
             }
         }
         &3 {
-            font-family: 'Satisfy', cursive;
+            & p {
+            font-family: 'Times New Roman', serif;
+            font-style: oblique;
+            }
+        
             
             & .main-container {
                 &__header {
@@ -207,7 +216,10 @@ input {
         }
     }
     &4 {
-        font-family: 'Satisfy', cursive;
+        & p {
+        font-family: 'Times New Roman', serif;
+        font-style: oblique;
+    }
             
         & .main-container {
             &__header {

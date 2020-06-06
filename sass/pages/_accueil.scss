@@ -252,8 +252,10 @@ h2 {
         border-radius: 0.7rem;
         display: flex;
         align-items: center;
+        
         & h2 {
             text-align: center;
+            margin: 1.5rem auto;
         }
         
     }
