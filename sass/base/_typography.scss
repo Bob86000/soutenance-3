@@ -269,6 +269,10 @@ input {
             & p {
             font-family: 'Times New Roman', serif;
             font-style: oblique;
+            
+            }
+            & h2 {
+                font-style: italic;
             }
         
             
@@ -305,7 +309,11 @@ input {
         & p {
         font-family: 'Times New Roman', serif;
         font-style: oblique;
+        
     }
+        & h2 {
+            font-style: italic;
+        }
             
         & .article {
             &__header {

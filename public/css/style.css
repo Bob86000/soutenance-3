@@ -293,6 +293,9 @@ input {
   font-family: "Times New Roman", serif;
   font-style: oblique;
 }
+.main-container__other-page3 h2 {
+  font-style: italic;
+}
 .main-container__other-page3 .article__header {
   background: linear-gradient(165deg, #0101be 25%, #378dff 65%, #36b7f3 70%);
   -webkit-background-clip: text;
@@ -319,6 +322,9 @@ input {
 .main-container__other-page4 p {
   font-family: "Times New Roman", serif;
   font-style: oblique;
+}
+.main-container__other-page4 h2 {
+  font-style: italic;
 }
 .main-container__other-page4 .article__header {
   background: linear-gradient(165deg, #0d741a 45%, #3dcc20 50%, #9ad34f 60%);
@@ -448,6 +454,9 @@ header h1 {
   .main-container__legal-page p {
     width: 90%;
   }
+}
+.main-container__soon-page {
+  text-align: center;
 }
 .main-container__contact-page {
   text-align: center;
