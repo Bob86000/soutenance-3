@@ -25,13 +25,39 @@ header h1, footer h3, .main-container__link5 {
 h1 {
   font-size: 5rem;
 }
-
-h2 {
-  font-size: 2rem;
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 991px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 h3 {
   font-size: 2rem;
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  h3 {
+    font-size: 1.7rem;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 991px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@media all and (max-width: 768px) {
+  h3 {
+    font-size: 1.2rem;
+  }
 }
 
 h4 {
@@ -69,8 +95,28 @@ input {
 .main-container__wrapped h2 {
   font-size: 3rem;
 }
+@media all and (min-width: 769px) and (max-width: 1199px) {
+  .main-container__wrapped h2 {
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .main-container__wrapped h2 {
+    font-size: 1rem;
+  }
+}
 .main-container__wrapped p {
   font-size: 4rem;
+}
+@media all and (min-width: 769px) and (max-width: 991px) {
+  .main-container__wrapped p {
+    font-size: 3rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .main-container__wrapped p {
+    font-size: 2rem;
+  }
 }
 
 .main-container__link1 {
@@ -400,9 +446,9 @@ h2 {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  height: 50rem;
-  padding-top: 20rem;
-  padding-bottom: 15rem;
+  height: 55rem;
+  padding-top: 22rem;
+  padding-bottom: 18rem;
 }
 @media all and (min-width: 992px) and (max-width: 1199px) {
   .main-container__link1, .main-container__link2, .main-container__link3, .main-container__link4 {
@@ -430,10 +476,40 @@ h2 {
 }
 .main-container__link1 {
   background-color: #f7d4bc;
-  padding-top: 14.5rem;
+  padding-top: 16.5rem;
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .main-container__link1 {
+    padding-top: 11.5rem;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 991px) {
+  .main-container__link1 {
+    padding-top: 7.5rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .main-container__link1 {
+    padding-top: 3.75rem;
+  }
 }
 .main-container__link1 .fa-music {
   font-size: 5.5rem;
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .main-container__link1 .fa-music {
+    font-size: 3.5rem;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 991px) {
+  .main-container__link1 .fa-music {
+    font-size: 2.5rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .main-container__link1 .fa-music {
+    font-size: 1.25rem;
+  }
 }
 .main-container__link2 {
   background-color: rgba(247, 240, 248, 0.815);
@@ -445,7 +521,6 @@ h2 {
 .main-container__link4 {
   background-color: white;
   font-style: italic;
-  font-family: "Satisfy", cursive;
 }
 .main-container__link5 {
   background-color: #2a8660;
