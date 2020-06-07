@@ -48,6 +48,19 @@
         margin-top: 1%;
         margin-left: 12%;
         margin-right: 12%;
+        & p {
+            margin-right: 2%;
+        }
+        @media all and (min-width: 769px) and (max-width: 1199px){
+            width: 90%;
+            margin-left: 5%;
+        margin-right: 5%;
+            }
+       @media all and (max-width: 768px){
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+            }
         & h2, h3 ,h4 {
             display: inline-block;
         }
@@ -60,10 +73,6 @@
             
         }
         &2 {
-            .article__plats{
-                margin-left: 15%;
-                margin-right: 15%;
-            }
             background-color: $menu2-bcg;
             .addscolors {
                 &1 .liner {
@@ -88,10 +97,6 @@
     }
         &3 {
             background-color: $menu3-bcg;
-            .article__plats{
-                margin-left: 15%;
-                margin-right: 15%;
-            }
             .addscolors {
                 &1 .liner {
                     background-color: $menu3-color;
@@ -115,10 +120,6 @@
     }
         &4 {
             background-color: $menu4-bcg;
-            .article__plats{
-                margin-left: 15%;
-                margin-right: 15%;
-            }
             .addscolors {
                 
                 &1 .liner {
@@ -145,8 +146,6 @@
     }
 }
         
-    
-
     
 }
 
@@ -256,6 +255,25 @@ h2 {
     &__plats {
         display: flex;
         flex-direction: column;
+        margin-left: 15%;
+        margin-right: 15%;
+        @media all and (min-width: 992px) and (max-width: 1199px){
+            margin-left: 10%;
+        margin-right: 10%;
+
+        }
+
+        @media all and (min-width: 769px) and (max-width: 991px){
+            margin-left: 7%;
+        margin-right: 7%;
+
+        }
+
+        @media all and (max-width: 768px){
+            margin-left: 2%;
+        margin-right: 2%;
+
+        }
 
     }
     &__noms {
@@ -310,6 +328,13 @@ h2 {
         text-align: center;
         width: 30%; 
         }
+        @media all and (max-width: 768px){
+            flex-direction: column;
+            & h3 {
+                width:100%
+            }
+            
+        }
 
     }
     &__linear {
@@ -318,6 +343,9 @@ h2 {
         content: "";
         width: 30%;
         height: 5px;
+        @media all and (max-width: 768px){
+                width:100%
+            }
     }
         
     }
@@ -347,4 +375,14 @@ footer {
     }
     padding-top: 3%;
     padding-bottom: 8%;
+    
+   @media all and (max-width: 768px){
+    padding-bottom: 20%;
+        }
+}
+.main-container__other-page1 {
+    & .article__plats {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

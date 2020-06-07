@@ -2,6 +2,20 @@
     &__header {
         & .fa-music {
             font-size: 6rem;
+            @media all and (min-width: 992px) and (max-width: 1199px){
+                font-size: 4rem;
+
+            }
+
+            @media all and (min-width: 769px) and (max-width: 991px){
+                font-size: 3rem;
+
+            }
+
+            @media all and (max-width: 768px){
+                 font-size: 2rem;
+            }
+            
         }
     }
 
@@ -9,6 +23,21 @@
         & .fa-music {
             margin-right: 2rem;
             font-size: 3rem;
+            @media all and (min-width: 992px) and (max-width: 1199px){
+                font-size: 2.5rem;
+                margin-right: 1.7rem;
+
+            }
+
+            @media all and (min-width: 769px) and (max-width: 991px){
+                font-size: 2.2rem;
+                margin-right: 1.5rem;
+            }
+
+            @media all and (max-width: 768px){
+                 font-size: 2rem;
+                 margin-right: 0.4rem;
+            }
         }
     }
 }
