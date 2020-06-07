@@ -219,6 +219,16 @@ input {
 .main-container__ctn-legal address {
   font-size: 1.3rem;
 }
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .main-container__ctn-legal address {
+    font-size: 1.2rem;
+  }
+}
+@media all and (max-width: 991px) {
+  .main-container__ctn-legal address {
+    font-size: 1rem;
+  }
+}
 .main-container__other-page1 p {
   font-family: "Times New Roman", serif;
   font-style: oblique;
@@ -420,9 +430,24 @@ header h1 {
   text-align: center;
 }
 .main-container__legal-page p {
-  width: 30%;
+  width: 40%;
   text-align: justify;
   margin: auto;
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .main-container__legal-page p {
+    width: 50%;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 991px) {
+  .main-container__legal-page p {
+    width: 65%;
+  }
+}
+@media all and (max-width: 768px) {
+  .main-container__legal-page p {
+    width: 90%;
+  }
 }
 .main-container__contact-page {
   text-align: center;
@@ -629,8 +654,8 @@ h2 {
 .article__plats {
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 9%;
+  margin-right: 9%;
 }
 @media all and (min-width: 992px) and (max-width: 1199px) {
   .article__plats {
@@ -737,14 +762,14 @@ footer a {
   display: flex;
   flex-direction: column;
   padding-top: 3%;
-  padding-bottom: 8%;
+  padding-bottom: 10rem;
 }
 .main_wrapper .other-font h2 {
   text-align: center;
 }
 @media all and (max-width: 768px) {
   .main_wrapper .other-font {
-    padding-bottom: 20%;
+    padding-bottom: 8rem;
   }
 }
 
@@ -791,6 +816,20 @@ footer a {
   .article__footer .fa-music {
     font-size: 2rem;
     margin-right: 0.4rem;
+  }
+}
+
+.main-container__contact-page {
+  padding: 0 20% 0 20%;
+}
+@media all and (min-width: 769px) and (max-width: 991px) {
+  .main-container__contact-page {
+    padding: 0 10% 0 10%;
+  }
+}
+@media all and (max-width: 768px) {
+  .main-container__contact-page {
+    padding: 0 1% 0 1%;
   }
 }
 
