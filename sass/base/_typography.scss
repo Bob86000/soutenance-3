@@ -231,6 +231,9 @@ p {
                 }
                 &__linear {
                     color: $menu1-color;
+                    & .highlight::after {
+                        background-color: $menu1-color;
+                    }
                 }
                 &__footer {
                     color : $menu1-color;
@@ -278,6 +281,9 @@ p {
             }
             & .addscolors1 {
                 color: $menu2-color;
+                & .highlight::after {
+                    background-color: $menu2-color;
+                }
                 
             }
             & .addscolors2 {
@@ -285,12 +291,18 @@ p {
             }
             & .addscolors3 {
                 color:$menu2-specialcolor1;
+                & .highlight::after {
+                    background-color: $menu2-specialcolor1;
+                }
             }
             & .addscolors4 {
                 color:$menu2-specialcolor1;
             }
             & .addscolors5 {
                 color: $menu2-specialcolor2 ;
+                & .highlight::after {
+                    background-color: $menu2-specialcolor2;
+                }
             }
             & .addscolors6 {
                 color:$menu2-specialcolor2 ;

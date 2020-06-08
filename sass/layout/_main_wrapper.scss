@@ -60,20 +60,25 @@ a:hover {
         transform: scale(1.1);
     }
     75% {
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
     100% {
-        transform: scale(1.3);
+        transform: scale(1.2);
     } 
 }
 
 .highlight::after {
         content: "";
         display: flex;
-        background-color: black;
-        height: 2px;
+        height: 4px;
         transform: scaleX(0);
+        width:75%;
+        justify-content: center;
+        margin: auto;
+        background-color: $nocolor;
 }
+
+
 
 .article__linear:hover {
     & .highlight::after {
@@ -96,4 +101,22 @@ a:hover {
     }
 }
 
-
+.btn {
+    z-index: 1;
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0 ;
+        background-color: darken($head-foot-bgc,5);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+    &:hover {
+        &::after {
+        opacity: 1;
+        }
+    }
+}
