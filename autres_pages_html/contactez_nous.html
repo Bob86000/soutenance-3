@@ -41,19 +41,29 @@
             <div class="main-container__contact-page">
                 <form method="post" action="traitement.php">
                    <p>
-                       <label for="pseudo">Vous avez des questions? Vous êtes au bon endroit, écrivez votre message et appuyer sur envoyer :</label><br /> <br /><br />
-                        <textarea maxlength="200" style="width:100%;height:20rem;" name="pseudo" id="pseudo"></textarea>
+                       <label for="suggestion">Vous avez des questions? Vous êtes au bon endroit, écrivez votre message et appuyer sur envoyer :
+
+                       </label>
+                       <br /> <br /><br />
+                       <textarea maxlength="850" style="width:100%;height:20rem;" name="suggestion" id="suggestion" class="form__textarea-input" >Votre message...</textarea>
                     </p>
-                 </form>
-                 <label for="pseudo">Veuillez également saisir votre e-mail pour valider l'envoi du message :</label><br /> <input type="email" />
-                 <input type="submit" value="envoyer"/>
+                 
+                    <p>
+                        <label>
+                        Veuillez également saisir votre e-mail pour valider l'envoi du message :<br />  <br />  
+                        <input type="email" name="email-input" class="form__email-input"/><br /><br />
+                        <input type="submit" value="Envoyer"class="form__btn-input"/>
+                        </label>
+                    </p>
+                 
+                </form>
                 </div>
             </article>
                 
             </div>
             </div>
             <footer>
-                <a href="mentions_legales.html">
+                <a target="_blank" href="mentions_legales.html">
                     <div class="footer__link" >
                         <h3>Mentions légales</h3>
                     </div>

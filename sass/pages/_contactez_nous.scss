@@ -11,3 +11,32 @@
     }
 
 }
+.form {
+    &__email-input {
+        border: 3px solid $color-border-input;
+        border-radius: 100rem;
+        color: $color-input-text;
+        font-family: 'Montserrat', sans-serif;
+        outline: none;
+        padding: .5rem 1.5rem;
+        width: 70%;
+        &:focus {
+            border: 3px solid $color-border-input;
+        }
+        &:not(:focus):invalid {
+            background-color: $color-error;
+            border: 3px solid $color-error;
+            color: $color-txt--invalid;
+        }
+    }
+    &__btn-input {
+        border: 2px solid $color-border-input;
+        border-radius: 100rem;
+        color: $fontcolour-secondary;
+        background-color: $head-foot-bgc;
+    } 
+    &__textarea-input {
+        border: 2px solid $color-border-input;
+        background-color: $menu2-bcg;
+    }
+}

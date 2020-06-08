@@ -83,8 +83,35 @@ p {
   }
 }
 
-input {
-  font-size: 1.5rem;
+.form__btn-input {
+  font-size: 1.3rem;
+}
+.form__email-input {
+  font-size: 1.1rem;
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .form__btn-input {
+    font-size: 1.2rem;
+  }
+  .form__email-input {
+    font-size: 1rem;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 991px) {
+  .form__btn-input {
+    font-size: 1rem;
+  }
+  .form__email-input {
+    font-size: 0.8rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .form__btn-input {
+    font-size: 0.9rem;
+  }
+  .form__email-input {
+    font-size: 0.7rem;
+  }
 }
 
 .other-font h2 {
@@ -840,6 +867,34 @@ footer a {
   .main-container__contact-page {
     padding: 0 1% 0 1%;
   }
+}
+
+.form__email-input {
+  border: 3px solid #2a8660;
+  border-radius: 100rem;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  width: 70%;
+}
+.form__email-input:focus {
+  border: 3px solid #2a8660;
+}
+.form__email-input:not(:focus):invalid {
+  background-color: red;
+  border: 3px solid red;
+  color: white;
+}
+.form__btn-input {
+  border: 2px solid #2a8660;
+  border-radius: 100rem;
+  color: rgba(241, 208, 100, 0.918);
+  background-color: #2a8660;
+}
+.form__textarea-input {
+  border: 2px solid #2a8660;
+  background-color: rgba(247, 240, 248, 0.815);
 }
 
 /*# sourceMappingURL=style.css.map */

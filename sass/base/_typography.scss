@@ -49,8 +49,39 @@ p {
         font-size: 1rem;
         }
 }
-input {
-    font-size: 1.5rem;
+.form {
+    &__btn-input {
+    font-size: 1.3rem;
+}
+    &__email-input {
+        font-size: 1.1rem;     
+    } 
+    @media all and (min-width: 992px) and (max-width: 1199px){
+        &__btn-input {
+            font-size: 1.2rem;
+        }
+        &__email-input {
+            font-size: 1rem;
+
+        } 
+        }
+    @media all and (min-width: 769px) and (max-width: 991px){
+        &__btn-input {
+            font-size: 1rem;
+        }
+        &__email-input {
+            font-size: 0.8rem;
+            
+        } 
+        }
+   @media all and (max-width: 768px){
+    &__btn-input {
+        font-size: 0.9rem;
+    }
+        &__email-input {
+            font-size: 0.7rem;  
+        } 
+        }
 }
 .other-font {
     & h2 {
