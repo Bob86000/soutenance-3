@@ -172,7 +172,7 @@ h2 {
 }
 
 
-.main-container__link {
+.main-container__ctn-link {
     &1, &2, &3, &4 {
     @include middleblock;
     box-shadow: 3px 3px 6px rgb(214, 211, 211);
@@ -254,6 +254,7 @@ h2 {
         border-radius: 0.7rem;
         display: flex;
         align-items: center;
+        flex-direction: column;
         margin-bottom: 6rem;
         
         & h2 {

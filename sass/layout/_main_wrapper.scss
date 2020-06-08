@@ -18,6 +18,17 @@
     animation: headshake 200ms cubic-bezier(.4,.1,.6,.9) 4;
     }
 }
+a:hover {
+    & .zoom {
+    animation: zoom 500ms cubic-bezier(.4,.1,.6,.9) forwards;
+    @media all and (max-width: 768px){
+    animation: smallzoom 500ms  cubic-bezier(.4,.1,.6,.9) forwards;
+    }
+    
+
+}
+}
+
 @keyframes headshake {
     25% {
         // entièrement à droite
@@ -27,4 +38,23 @@
         // entièrement à gauche
         transform: translateX($shake-intensity * -1);
     }
+}
+@keyframes zoom { 
+    25% {
+        
+        transform: scale(1.3);
+    }
+    75% {
+        transform: scale(1.7);
+    } 
+}
+
+@keyframes smallzoom {
+    25% {
+        
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(1.3);
+    } 
 }

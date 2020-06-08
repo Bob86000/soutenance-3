@@ -35,7 +35,7 @@
         border-radius: 100rem;
         color: $fontcolour-secondary;
         background-color: $head-foot-bgc;
-        &:not(:focus):invalid {
+        &:invalid {
             background-color: $color-error;
             border: 2px solid $color-error;
             color: $color-txt--invalid;
@@ -46,15 +46,5 @@
     &__textarea-input {
         border: 2px solid $color-border-input;
         background-color: $menu2-bcg;
-    }
-}
-@keyframes headshake {
-    25% {
-        // entièrement à droite
-        transform: translateX($shake-intensity);
-    }
-    75% {
-        // entièrement à gauche
-        transform: translateX($shake-intensity * -1);
     }
 }

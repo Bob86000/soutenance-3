@@ -4,7 +4,7 @@
     src: url('../../image/fonts/devonshire-regular.ttf') format('truetype');
 }
 
-header h1, footer h3, .main-container__link5 {
+header h1, footer h3, .main-container__ctn-link5 {
     color: $fontcolour-secondary;
 }
 
@@ -153,7 +153,7 @@ p {
     }
 }
 
-.main-container__link{
+.main-container__ctn-link{
     &1 {
         color: $menu1-color;
         & p{
