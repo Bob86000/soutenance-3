@@ -86,14 +86,14 @@ p {
 .form__btn-input {
   font-size: 1.3rem;
 }
-.form__email-input {
+.form__email-input input {
   font-size: 1.1rem;
 }
 @media all and (min-width: 992px) and (max-width: 1199px) {
   .form__btn-input {
     font-size: 1.2rem;
   }
-  .form__email-input {
+  .form__email-input input {
     font-size: 1rem;
   }
 }
@@ -101,7 +101,7 @@ p {
   .form__btn-input {
     font-size: 1rem;
   }
-  .form__email-input {
+  .form__email-input input {
     font-size: 0.8rem;
   }
 }
@@ -425,6 +425,18 @@ header h1 {
   text-align: end;
 }
 
+.footer__link :hover {
+  animation: headshake 200ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 4;
+}
+
+@keyframes headshake {
+  25% {
+    transform: translateX(5%);
+  }
+  75% {
+    transform: translateX(-5%);
+  }
+}
 .main-container {
   display: flex;
   width: 100%;
@@ -869,8 +881,8 @@ footer a {
   }
 }
 
-.form__email-input {
-  border: 3px solid #2a8660;
+.form__email-input input {
+  border: 2px solid #2a8660;
   border-radius: 100rem;
   color: black;
   font-family: "Montserrat", sans-serif;
@@ -878,13 +890,14 @@ footer a {
   padding: 0.5rem 1.5rem;
   width: 70%;
 }
-.form__email-input:focus {
-  border: 3px solid #2a8660;
+.form__email-input input:focus {
+  border: 2px solid #2a8660;
 }
-.form__email-input:not(:focus):invalid {
+.form__email-input input:not(:focus):invalid {
   background-color: red;
-  border: 3px solid red;
+  border: 2px solid red;
   color: white;
+  animation: headshake 200ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
 }
 .form__btn-input {
   border: 2px solid #2a8660;
@@ -892,9 +905,24 @@ footer a {
   color: rgba(241, 208, 100, 0.918);
   background-color: #2a8660;
 }
+.form__btn-input:not(:focus):invalid {
+  background-color: red;
+  border: 2px solid red;
+  color: white;
+  animation: headshake 200ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+}
 .form__textarea-input {
   border: 2px solid #2a8660;
   background-color: rgba(247, 240, 248, 0.815);
+}
+
+@keyframes headshake {
+  25% {
+    transform: translateX(5%);
+  }
+  75% {
+    transform: translateX(-5%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

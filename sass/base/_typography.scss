@@ -53,14 +53,14 @@ p {
     &__btn-input {
     font-size: 1.3rem;
 }
-    &__email-input {
+    &__email-input input {
         font-size: 1.1rem;     
     } 
     @media all and (min-width: 992px) and (max-width: 1199px){
         &__btn-input {
             font-size: 1.2rem;
         }
-        &__email-input {
+        &__email-input input {
             font-size: 1rem;
 
         } 
@@ -69,7 +69,7 @@ p {
         &__btn-input {
             font-size: 1rem;
         }
-        &__email-input {
+        &__email-input input {
             font-size: 0.8rem;
             
         } 

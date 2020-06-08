@@ -13,3 +13,18 @@
         text-align: end;
     }
 }
+.footer__link {
+    :hover {
+    animation: headshake 200ms cubic-bezier(.4,.1,.6,.9) 4;
+    }
+}
+@keyframes headshake {
+    25% {
+        // entièrement à droite
+        transform: translateX($shake-intensity);
+    }
+    75% {
+        // entièrement à gauche
+        transform: translateX($shake-intensity * -1);
+    }
+}
