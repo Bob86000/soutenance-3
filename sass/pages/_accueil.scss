@@ -3,7 +3,6 @@
     justify-content: center;
     &__wrapped {
     @include  extrarowblock (wrap);
-    width: 100%;
     margin: auto;
     justify-content: center;
     & a {
@@ -12,7 +11,6 @@
         margin-top: 6%;
         margin-left: 3%;
         margin-right: 3%;
-        text-decoration: initial;
         @media all and (max-width: 768px){
             width: 80%
         
@@ -57,29 +55,6 @@
         
     }
     &__other-page {
-        &1, &2, &3, &4{
-        width: 76%;
-        margin-top: 1%;
-        margin-left: 12%;
-        margin-right: 12%;
-        & p {
-            margin-right: 2%;
-        }
-        @media all and (min-width: 769px) and (max-width: 1199px){
-            width: 90%;
-            margin-left: 5%;
-        margin-right: 5%;
-            }
-       @media all and (max-width: 768px){
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-            }
-        & h2, h3 ,h4 {
-            display: inline-block;
-            flex-direction: column;
-        }
-    }
         &1 {
             background-color: $menu1-bcg;
             & .liner {
@@ -164,6 +139,31 @@
     
 }
 
+.ctn-article {
+        width: 76%;
+        margin-top: 1%;
+        margin-left: 12%;
+        margin-right: 12%;
+        & p {
+            margin-right: 2%;
+        }
+        @media all and (min-width: 769px) and (max-width: 1199px){
+            width: 90%;
+            margin-left: 5%;
+        margin-right: 5%;
+            }
+       @media all and (max-width: 768px){
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+            }
+        & h2, h3 ,h4 {
+            display: inline-block;
+            flex-direction: column;
+        }
+    }
+
+
 h2 {
     margin-top: 0;
 }
@@ -172,40 +172,42 @@ h2 {
     font-size: 5.5rem;
 }
 
+.ctn-section {
+        @include middleblock;
+        box-shadow: 3px 3px 6px rgb(214, 211, 211);
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        height: 55rem;
+        padding-top: 22rem;
+        padding-bottom: 18rem;
+        @media all and (min-width: 992px) and (max-width: 1199px)
+        {
+            height: 40rem;
+            padding-top: 15rem;
+            padding-bottom: 10rem;
+        }
+        @media all and (min-width: 769px) and (max-width: 991px){
+            height: 30rem;
+            padding-top: 10rem;
+            padding-bottom: 5rem;
+        }
+        @media all and (max-width: 768px){
+            
+            height: 15rem;
+            padding-top: 5rem;
+            padding-bottom: 1rem;
+        }
+        
+    
+        & p {
+            margin-bottom: 0;
+        }
+        }
+
 
 .main-container__ctn-link {
-    &1, &2, &3, &4 {
-    @include middleblock;
-    box-shadow: 3px 3px 6px rgb(214, 211, 211);
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    height: 55rem;
-    padding-top: 22rem;
-    padding-bottom: 18rem;
-    @media all and (min-width: 992px) and (max-width: 1199px)
-    {
-        height: 40rem;
-        padding-top: 15rem;
-        padding-bottom: 10rem;
-    }
-    @media all and (min-width: 769px) and (max-width: 991px){
-        height: 30rem;
-        padding-top: 10rem;
-        padding-bottom: 5rem;
-    }
-    @media all and (max-width: 768px){
-        
-        height: 15rem;
-        padding-top: 5rem;
-        padding-bottom: 1rem;
-    }
-    
-
-    & p {
-        margin-bottom: 0;
-    }
-    }
+   
     &1 {
         background-color: $menu1-bcg;
         padding-top: 16.5rem;
@@ -261,6 +263,8 @@ h2 {
         & h2 {
             text-align: center;
             margin: 1.5rem auto;
+            display:flex;
+            justify-content: center;
         }
         
     }
@@ -295,21 +299,17 @@ h2 {
     &__noms {
         display: flex;
         justify-content: space-between;
+        @media all and (max-width: 768px){
+            text-align: center;
+            flex-direction: column;
+
+        }
     }
     
     &__detail-menu {
-        &1, &2, &3, &4 {
+        &1 {
             display: flex;
             flex-direction: column;
-        }
-        &2, &3 ,&4 {
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-top: 10%;
-            margin-bottom: 10%;
-            width: 90%;
-        }
-        &1 {
             margin-left: 12%;
             margin-right: 12%;
             margin-top: 10%;
@@ -342,7 +342,6 @@ h2 {
         justify-content: space-between;
         & h3 {
         text-align: center;
-        width: 30%; 
         }
         @media all and (max-width: 768px){
             flex-direction: column;
@@ -352,6 +351,10 @@ h2 {
             
         }
 
+    }
+    &__underline {
+        display:flex;
+        justify-content: center;
     }
     &__linear {
         & .liner {
@@ -400,5 +403,112 @@ footer {
     & .article__plats {
         margin-left: 0;
         margin-right: 0;
+    }
+}
+
+.section__ctn-pixel {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0.7rem;
+    margin-left: 1rem;
+    @media all and (min-width: 992px) and (max-width: 1199px){
+        margin-bottom: 0.5rem;
+    }
+    @media all and (min-width: 769px) and (max-width: 991px){
+        margin-bottom: 0.5rem;
+    }
+    @media all and (max-width: 768px){
+        margin-bottom: 0.3rem;
+    }
+    &> div {
+    width: 7px;
+    height: 7px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: $fontcolour-secondary;
+    opacity:0;
+    @media all and (min-width: 992px) and (max-width: 1199px){
+    width: 5px;
+    height: 5px;
+    margin-right: 7px;
+    margin-left: 7px;
+    }
+    @media all and (min-width: 769px) and (max-width: 991px){
+        width: 3px;
+    height: 3px;
+    margin-right: 4px;
+    margin-left: 4px;
+    }
+    @media all and (max-width: 768px){
+        width: 3px;
+        height: 3px;
+        margin-right: 3px;
+        margin-left: 3px;
+    
+        }
+    }
+}
+.section__pixel {
+    &1 {
+        animation: pixelsection1 3000ms  backwards linear infinite;
+    }
+    &2 {
+        animation: pixelsection2 2000ms    backwards linear  1000ms infinite;
+    }
+    &3 {
+        animation: pixelsection3 1000ms  backwards linear  2000ms infinite;
+    }
+}
+
+
+@keyframes pixelsection1 {
+    0% {
+        opacity:1;
+    }
+    25% {
+        opacity:1;
+    }
+    74%{
+        opacity:1;
+    }
+    75% {
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+@keyframes pixelsection2 {
+    0% {
+        opacity:1;
+    }
+    25% {
+        opacity:1;
+    }
+    50%{
+        opacity:1;
+    }
+    51% {
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+@keyframes pixelsection3 {
+    0% {
+        opacity:1;
+    }
+    25% {
+        opacity:1;
+    }
+    26%{
+        opacity:0;
+    }
+    75% {
+        opacity:0;
+    }
+    100%{
+        opacity:0;
     }
 }

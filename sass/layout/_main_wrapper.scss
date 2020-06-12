@@ -2,6 +2,7 @@
     @include extracolumnblock;
     & a {
         text-decoration: initial;
+        color: inherit;
     }
 }
 .detail-menu {
@@ -18,15 +19,22 @@
     animation: headshake 200ms cubic-bezier(.4,.1,.6,.9) 4;
     }
 }
-a:hover {
-    & .zoom {
-    transform: scale(1);
-    animation: zoom 500ms forwards;
-    @media all and (max-width: 768px){
-    animation: smallzoom 500ms forwards ;
-    }
-    
+.main-container__link {
+    width: 70%;
+}
 
+
+.zoom {
+    transform: scale(1);
+    opacity: (1);
+    transition: all 500ms linear 100ms;
+
+}
+.main-container__wrapped a:hover {
+   & .zoom  {
+    transform: scale(1.4);
+    opacity: (0.6);
+    transition: transform 500ms cubic-bezier(.07,1.19,.41,.89);
 }
 }
 
@@ -40,41 +48,15 @@ a:hover {
         transform: translateX($shake-intensity * -1);
     }
 }
-@keyframes zoom { 
-    25% {
-        
-        transform: scale(1.3);
-    }
-    75% {
-        transform: scale(1.7);
-    }
-        100% {
-            transform: scale(1.7);
-        }
-    
-}
 
-@keyframes smallzoom {
-    25% {
-        
-        transform: scale(1.1);
-    }
-    75% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1.2);
-    } 
-}
+
 
 .highlight::after {
         content: "";
         display: flex;
         height: 4px;
-        transform: scaleX(0);
-        width:75%;
-        justify-content: center;
-        margin: auto;
+        transform: scale(0);
+        transition: transform 500ms cubic-bezier(.07,1.19,.41,.89) 300ms;
         background-color: $nocolor;
 }
 
@@ -83,7 +65,11 @@ a:hover {
 .article__linear:hover {
     & .highlight::after {
         transform-origin: left;
-        animation: progress-bar 2000ms forwards ;
+        transform: scale(1);
+        transition: transform 500ms cubic-bezier(.07,1.19,.41,.89);
+        @media all and (max-width: 768px){
+            transform: scale(0);
+        }
     }
 }
 
