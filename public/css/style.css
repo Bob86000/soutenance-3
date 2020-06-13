@@ -975,63 +975,63 @@ footer a {
 }
 
 .section__pixel1 {
-  animation: pixelsection1 3000ms backwards linear infinite;
+  animation: pixelsection1 3000ms linear infinite;
 }
 .section__pixel2 {
-  animation: pixelsection2 2000ms backwards linear 1000ms infinite;
+  animation: pixelsection2 3000ms linear infinite;
 }
 .section__pixel3 {
-  animation: pixelsection3 1000ms backwards linear 2000ms infinite;
+  animation: pixelsection3 3000ms linear infinite;
 }
 
 @keyframes pixelsection1 {
   0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  74% {
-    opacity: 1;
-  }
-  75% {
     opacity: 0;
   }
-  100% {
+  20% {
+    opacity: 0;
+  }
+  21% {
+    opacity: 1;
+  }
+  81% {
+    opacity: 1;
+  }
+  82% {
     opacity: 0;
   }
 }
 @keyframes pixelsection2 {
   0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  51% {
     opacity: 0;
   }
-  100% {
+  40% {
+    opacity: 0;
+  }
+  41% {
+    opacity: 1;
+  }
+  81% {
+    opacity: 1;
+  }
+  82% {
     opacity: 0;
   }
 }
 @keyframes pixelsection3 {
   0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  26% {
     opacity: 0;
   }
-  75% {
+  60% {
     opacity: 0;
   }
-  100% {
+  61% {
+    opacity: 1;
+  }
+  81% {
+    opacity: 1;
+  }
+  82% {
     opacity: 0;
   }
 }
