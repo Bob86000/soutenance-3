@@ -427,6 +427,7 @@ footer {
     margin-left: 10px;
     background-color: $fontcolour-secondary;
     opacity:0;
+    border-radius: 2rem;
     @media all and (min-width: 992px) and (max-width: 1199px){
     width: 5px;
     height: 5px;
@@ -450,15 +451,15 @@ footer {
 }
 .section__pixel {
     &1 {
-        animation: pixelsection1 3000ms linear infinite;
+        animation: pixelsection1 3000ms cubic-bezier(.07,1.19,.41,.89) infinite;
        
     }
     &2 {
-        animation: pixelsection2 3000ms linear infinite;
+        animation: pixelsection2 3000ms cubic-bezier(.07,1.19,.41,.89) infinite;
         
     }
     &3 {
-        animation: pixelsection3 3000ms linear infinite;
+        animation: pixelsection3 3000ms cubic-bezier(.07,1.19,.41,.89) infinite;
         
     }
 }
