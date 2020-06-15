@@ -913,11 +913,16 @@ h2 {
   flex-direction: column;
   margin-bottom: 6rem;
 }
-.main-container__ctn-link5 h2 {
-  text-align: center;
-  margin: 1.5rem auto;
+.main-container__ctn-link5 .main-container__link {
   display: flex;
   justify-content: center;
+}
+.main-container__ctn-link5 h2 {
+  width: initial;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .main-container__other-page1 .article__plats {
@@ -928,27 +933,29 @@ h2 {
 .section__ctn-pixel {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 0.7rem;
   margin-left: 1rem;
+  margin-bottom: 2rem;
 }
 @media all and (min-width: 992px) and (max-width: 1199px) {
   .section__ctn-pixel {
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
   }
 }
 @media all and (min-width: 769px) and (max-width: 991px) {
   .section__ctn-pixel {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.9rem;
+    margin-left: 0.8rem;
   }
 }
 @media all and (max-width: 768px) {
   .section__ctn-pixel {
-    margin-bottom: 0.3rem;
+    margin-bottom: 1.7rem;
+    margin-left: 0.8rem;
   }
 }
 .section__ctn-pixel > div {
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
   margin-right: 10px;
   margin-left: 10px;
   background-color: #fdcb46;
@@ -957,24 +964,24 @@ h2 {
 }
 @media all and (min-width: 992px) and (max-width: 1199px) {
   .section__ctn-pixel > div {
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     margin-right: 7px;
     margin-left: 7px;
   }
 }
 @media all and (min-width: 769px) and (max-width: 991px) {
   .section__ctn-pixel > div {
-    width: 3px;
-    height: 3px;
+    width: 5px;
+    height: 5px;
     margin-right: 4px;
     margin-left: 4px;
   }
 }
 @media all and (max-width: 768px) {
   .section__ctn-pixel > div {
-    width: 3px;
-    height: 3px;
+    width: 4px;
+    height: 4px;
     margin-right: 3px;
     margin-left: 3px;
   }

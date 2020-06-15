@@ -16,20 +16,3 @@
     width: 100%;
 
 }
-@mixin animcircle {
-   22% { transform: scaleX(0.8);
-    transform: scaley(1.2);}
-    32% { transform: scaleX(0.6);
-        transform: scaley(1.4);}
-        42% { transform: scaleX(0.4);
-            transform: scaley(1.6);}
-            52% { transform: scaleX(0.8);
-                transform: scaley(1.2);}
-                62% { transform: scaleX(1.2);
-                    transform: scaley(0.8);}
-                    72% { transform: scaleX(1.6);
-                        transform: scaley(0.4);}
-
-
-
-}
