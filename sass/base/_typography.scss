@@ -107,7 +107,8 @@ p {
        @media all and (max-width: 768px){
             font-size: 1.3rem;
             }
-        font-family: 'Satisfy', cursive;
+        font-family: 'Satisfy', cursive, Verdana, Geneva, Tahoma, sans-serif;
+        
 }
     
     & h4 {
@@ -159,11 +160,11 @@ p {
         & p{
             text-transform: uppercase;
             font-style: italic;
-            font-family: 'satisfy', cursive;
+            font-family: 'satisfy', cursive, Verdana, Geneva, Tahoma, sans-serif;
             
         } 
         & h2{
-            font-family: 'devonshire', cursive;
+            font-family: 'devonshire', cursive, Verdana, Geneva, Tahoma, sans-serif;
         }  
     }
     &2 {
@@ -220,14 +221,14 @@ p {
     &__other-page {
         &1 {
             & p {
-                font-family: 'Times New Roman', serif;
+                font-family: 'Times New Roman', serif, Verdana, Geneva, Tahoma, sans-serif;
                 font-style: oblique;
             }
 
             & .article {
                 &__header {
                     color: $menu1-color;
-                    font-family: 'devonshire', cursive;
+                    font-family: 'devonshire', cursive, Verdana, Geneva, Tahoma, sans-serif;
                 }
                 &__linear {
                     color: $menu1-color;
@@ -237,7 +238,7 @@ p {
                 }
                 &__footer {
                     color : $menu1-color;
-                    font-family: 'devonshire', cursive;
+                    font-family: 'devonshire', cursive, Verdana, Geneva, Tahoma, sans-serif;
                 }
             }
                 & .article {
@@ -267,7 +268,7 @@ p {
                         @media all and (max-width: 768px){
                             font-size: 1.1rem;
                         }
-                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-family: Georgia, serif, 'Times New Roman', Times;
                     }
                 }
                     
@@ -310,7 +311,7 @@ p {
         }
         &3 {
             & p {
-            font-family: 'Times New Roman', serif;
+            font-family: 'Times New Roman',  serif, Verdana, Geneva, Tahoma, sans-serif;
             font-style: oblique;
             
             }
@@ -350,7 +351,7 @@ p {
     }
     &4 {
         & p {
-        font-family: 'Times New Roman', serif;
+        font-family: 'Times New Roman', serif, Verdana, Geneva, Tahoma, sans-serif;
         font-style: oblique;
         
     }

@@ -24,3 +24,296 @@ html {
         margin-bottom: 10%;
         width: 90%;
     }
+ 
+    
+    .main-container{
+        @include extrarowblock;
+        justify-content: center;
+        &__wrapped {
+        @include  extrarowblock (wrap);
+        margin: auto;
+        justify-content: center;
+        & a {
+            width: 40%;
+            margin-bottom: 2.5%;
+            margin-top: 6%;
+            margin-left: 3%;
+            margin-right: 3%;
+            @media all and (max-width: 768px){
+                width: 80%
+            
+            }
+            
+           
+            }
+        & h2, p {
+            display: inline-block;
+            width: 100%;
+        }
+        & p {
+            margin-top: 0;
+        }
+    
+        }
+        &__legal-page {
+            text-align: center;
+            & p {
+                width: 40%;
+                text-align: justify;
+                margin: auto;
+                @media all and (min-width: 992px) and (max-width: 1199px){
+                    width: 50%;
+                }
+    
+                @media all and (min-width: 769px) and (max-width: 991px){
+                    width: 65%;
+                }
+    
+                @media all and (max-width: 768px){
+                    width: 90%;
+                }
+    
+            }
+        }
+        &__soon-page {
+            text-align: center;
+        }
+        &__contact-page {
+            text-align: center;
+            
+        }
+        &__other-page {
+            &1 {
+                background-color: $menu1-bcg;
+                & .liner {
+                    background-color: $menu1-color;
+                }
+                
+            }
+            &2 {
+                background-color: $menu2-bcg;
+                .addscolors {
+                    &1 .liner {
+                        background-color: $menu2-color;
+                    }
+                    &2 .liner {
+                        background-color: $menu2-color;
+                    }
+                    &3 .liner {
+                        background-color: $menu2-specialcolor1;
+                    }
+                    &4 .liner {
+                        background-color: $menu2-specialcolor1;
+                    }
+                    &5 .liner {
+                        background-color: $menu2-specialcolor2;
+                    }
+                    &6 .liner {
+                        background-color: $menu2-specialcolor2;
+                    }
+            }
+        }
+            &3 {
+                background-color: $menu3-bcg;
+                .addscolors {
+                    &1 .liner {
+                        background-color: $menu3-color;
+                    }
+                    &2 .liner {
+                        background-color: $menu3-color;
+                    }
+                    &3 .liner {
+                        background-color: $menu3-specialcolor1;
+                    }
+                    &4 .liner {
+                        background-color: $menu3-specialcolor1;
+                    }
+                    &5 .liner {
+                        background-color: $menu3-specialcolor2;
+                    }
+                    &6 .liner {
+                        background-color: $menu3-specialcolor2;
+                    }
+            }
+        }
+            &4 {
+                background-color: $menu4-bcg;
+                .addscolors {
+                    
+                    &1 .liner {
+                        
+                background: linear-gradient(260deg, $menu4-color 10%,  $menu4-specialcolor2 70%);
+               
+                }
+                    &2 .liner {
+                        background-color: $menu4-color;
+                    }
+                    &3 .liner {
+                        background: linear-gradient(260deg, $menu4-color 10%,  $menu4-specialcolor2 70%);
+                    }
+                    &4 .liner {
+                        background-color: $menu4-specialcolor1;
+                    }
+                    &5 .liner {
+                        background: linear-gradient(260deg, $menu4-color 10%,  $menu4-specialcolor2 70%);
+                    }
+                    &6 .liner {
+                        background-color: $menu4-specialcolor2;
+                    }
+            }
+        }
+    }
+            
+        
+    }
+    .main_wrapper .other-font {
+        display: flex;
+        flex-direction: column;
+        & h2 {
+        text-align: center;
+        }
+        padding-top: 3%;
+        padding-bottom: 10rem;
+        
+       @media all and (max-width: 768px){
+        padding-bottom: 8rem;
+            }
+    }   
+    
+.ctn-article {
+    width: 76%;
+    margin-top: 1%;
+    margin-left: 12%;
+    margin-right: 12%;
+    & p {
+        margin-right: 2%;
+    }
+    @media all and (min-width: 769px) and (max-width: 1199px){
+        width: 90%;
+        margin-left: 5%;
+    margin-right: 5%;
+        }
+   @media all and (max-width: 768px){
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+        }
+    & h2, h3 ,h4 {
+        display: inline-block;
+        flex-direction: column;
+    }
+}
+
+.article {
+        &__plats {
+            display: flex;
+            flex-direction: column;
+            margin-left: 9%;
+            margin-right: 9%;
+            @media all and (min-width: 992px) and (max-width: 1199px){
+                margin-left: 10%;
+            margin-right: 10%;
+    
+            }
+    
+            @media all and (min-width: 769px) and (max-width: 991px){
+                margin-left: 7%;
+            margin-right: 7%;
+    
+            }
+    
+            @media all and (max-width: 768px){
+                margin-left: 2%;
+            margin-right: 2%;
+    
+            }
+    
+        }
+        &__noms {
+            display: flex;
+            justify-content: space-between;
+            @media all and (max-width: 768px){
+                text-align: center;
+                flex-direction: column;
+    
+            }
+        }
+        
+        &__detail-menu {
+            &1 {
+                display: flex;
+                flex-direction: column;
+                margin-left: 12%;
+                margin-right: 12%;
+                margin-top: 10%;
+                margin-bottom: 10%;
+                width: 76%;
+            }
+        }
+        &__header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & img {
+                width: 13%;
+            }
+            
+        }   
+        &__footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            & img {
+                width: 8%;
+                margin-right: 1rem;
+            }
+        } 
+        &__linear {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            & h3 {
+            text-align: center;
+            }
+            @media all and (max-width: 768px){
+                flex-direction: column;
+                & h3 {
+                    width:100%
+                }
+                
+            }
+    
+        }
+        &__underline {
+            display:flex;
+            justify-content: center;
+        }
+        &__linear {
+            & .liner {
+            display: flex;
+            width: 30%;
+            height: 5px;
+            border-radius: 1rem;
+            @media all and (max-width: 768px){
+                    width:100%
+                }
+        }
+            
+        }
+        
+    }
+    
+footer {
+    @include  extrarowblock;
+    justify-content: space-between;
+    background-color: $head-foot-bgc; 
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    & a {
+        text-decoration: initial;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }    
+}
