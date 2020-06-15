@@ -1,7 +1,7 @@
 {
   "name": "writing-sass",
   "version": "1.0.0",
-  "description": "Joe Blow's portfolio",
+  "description": "ohmyfood restaurant",
   "main": "index.js",
   "scripts": {
     "sass":"sass --watch ./sass/main.scss:./public/css/style.css --style expanded",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
+    "url": "https://github.com/Bob86000/soutenance-3"
   },
-  "author": "gerkx",
+  "author": "bob86000",
   "license": "ISC",
   "browserslist":"last 4 versions",
   "bugs": {
-    "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
+    "url": "https://github.com/Bob86000/soutenance-3"
   },
-  "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme"
+  "homepage": "https://bob86000.github.io/soutenance-3/index.html"
 }
