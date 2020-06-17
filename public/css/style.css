@@ -580,7 +580,7 @@ p {
 }
 @media all and (min-width: 769px) and (max-width: 991px) {
   .main-container__other-page2 .article__detail-menu2 h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 @media all and (max-width: 768px) {
