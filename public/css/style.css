@@ -465,7 +465,7 @@ p {
 .fa-music {
   background: linear-gradient(120deg, #f83e4e 45%, rgba(255, 144, 80, 0.993) 70%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .main-container__wrapped h2 {
@@ -512,7 +512,7 @@ p {
 .main-container__ctn-link2 h2 {
   background: linear-gradient(165deg, orange 25%, #b771cc 59%, #631ab6 70%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .main-container__ctn-link3 {
   color: #0101be;
@@ -520,7 +520,7 @@ p {
 .main-container__ctn-link3 h2 {
   background: linear-gradient(165deg, #0101be 25%, #378dff 65%, #36b7f3 70%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .main-container__ctn-link4 {
   color: #0d741a;
@@ -528,7 +528,7 @@ p {
 .main-container__ctn-link4 h2 {
   background: linear-gradient(165deg, #0d741a 45%, #3dcc20 50%, #9ad34f 60%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .article__noms {
@@ -591,7 +591,7 @@ p {
 .main-container__other-page2 .article__header {
   background: linear-gradient(165deg, orange 25%, #b771cc 59%, #631ab6 70%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .main-container__other-page2 .addscolors1 {
   color: orange;
@@ -630,7 +630,7 @@ p {
 .main-container__other-page3 .article__header {
   background: linear-gradient(165deg, #0101be 25%, #378dff 65%, #36b7f3 70%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .main-container__other-page3 .addscolors1 {
   color: black;
@@ -660,7 +660,7 @@ p {
 .main-container__other-page4 .article__header {
   background: linear-gradient(165deg, #0d741a 45%, #3dcc20 50%, #9ad34f 60%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .main-container__other-page4 .addscolors1 {
   color: black;
