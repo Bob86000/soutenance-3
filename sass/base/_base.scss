@@ -39,7 +39,7 @@ html {
             margin-top: 6%;
             margin-left: 3%;
             margin-right: 3%;
-            @media all and (max-width: 768px){
+            @media all and (max-width: 500px){
                 width: 80%
             
             }
@@ -68,8 +68,11 @@ html {
                 @media all and (min-width: 769px) and (max-width: 991px){
                     width: 65%;
                 }
+                @media all and (min-width: 501px) and (max-width: 768px){
+                    width: 75%;
+                }
     
-                @media all and (max-width: 768px){
+                @media all and (max-width: 500px){
                     width: 90%;
                 }
     
@@ -175,7 +178,7 @@ html {
         padding-top: 3%;
         padding-bottom: 10rem;
         
-       @media all and (max-width: 768px){
+       @media all and (max-width: 500px){
         padding-bottom: 8rem;
             }
     }   
@@ -193,7 +196,12 @@ html {
         margin-left: 5%;
     margin-right: 5%;
         }
-   @media all and (max-width: 768px){
+        @media all and (min-width: 501px) and (max-width: 768px){
+            width: 94%;
+        margin-left: 3%;
+    margin-right: 3%;
+        }
+   @media all and (max-width: 500px){
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -221,8 +229,13 @@ html {
             margin-right: 7%;
     
             }
+            @media all and (min-width: 501px) and (max-width: 768px){
+                
+            margin-left: 5%;
+        margin-right: 5%;
+            }
     
-            @media all and (max-width: 768px){
+            @media all and (max-width: 500px){
                 margin-left: 2%;
             margin-right: 2%;
     
@@ -232,7 +245,7 @@ html {
         &__noms {
             display: flex;
             justify-content: space-between;
-            @media all and (max-width: 768px){
+            @media all and (max-width: 500px){
                 text-align: center;
                 flex-direction: column;
     
@@ -276,7 +289,7 @@ html {
             & h3 {
             text-align: center;
             }
-            @media all and (max-width: 768px){
+            @media all and (max-width: 500px){
                 flex-direction: column;
                 & h3 {
                     width:100%
@@ -295,7 +308,7 @@ html {
             width: 30%;
             height: 5px;
             border-radius: 1rem;
-            @media all and (max-width: 768px){
+            @media all and (max-width: 500px){
                     width:100%
                 }
         }

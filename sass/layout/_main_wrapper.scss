@@ -67,7 +67,7 @@
         transform-origin: left;
         transform: scale(1);
         transition: transform 500ms cubic-bezier(.07,1.19,.41,.89);
-        @media all and (max-width: 768px){
+        @media all and (max-width: 500px){
             transform: scale(0);
         }
     }
